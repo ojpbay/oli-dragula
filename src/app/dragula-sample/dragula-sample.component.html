@@ -1,8 +1,16 @@
 <div>
   <div class='wrapper'>
 
-    <div class='container' [dragula]='"oli-bag"'>
+    <div class='container' [dragula]='"oli-bag"' [dragulaModel]='questions'>
       <div class="question" *ngFor="let q of questions">{{q}}</div>
     </div>
+
+
+    <ol>
+      <li *ngFor="let question of questions">{{question}}</li>
+
+    </ol>
+
+    <button (click)="onClickMe()">Click me!</button>
   </div>
 </div>

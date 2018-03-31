@@ -30,4 +30,10 @@ export class DragulaSampleComponent implements OnInit {
     console.log(args);
   }
 
+  onClickMe() {
+    (this.questions.forEach(q =>  {
+      console.log(q);
+    }));
+  }
+
 }
