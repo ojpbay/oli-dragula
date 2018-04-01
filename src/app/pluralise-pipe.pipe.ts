@@ -3,7 +3,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({
   name: 'pluralisePipe'
 })
-export class PluralisePipePipe implements PipeTransform {
+export class PluralisePipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
     let result = value.toString();

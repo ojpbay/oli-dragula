@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { DragulaModule } from 'ng2-dragula';
+import { PluralisePipe } from '../pluralise-pipe.pipe';
 import { DragulaSampleComponent } from './dragula-sample.component';
 
 describe('DragulaSampleComponent', () => {
@@ -8,7 +9,11 @@ describe('DragulaSampleComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DragulaSampleComponent ]
+      imports: [ DragulaModule ],
+      declarations: [
+        DragulaSampleComponent,
+        PluralisePipe
+      ]
     })
     .compileComponents();
   }));
