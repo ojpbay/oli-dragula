@@ -2,7 +2,7 @@
   <div class='wrapper'>
 
     <div class='container' [dragula]='"oli-bag"' [dragulaModel]='questions'>
-      <div class="question" *ngFor="let q of questions">{{q}}</div>
+      <div class="question" *ngFor="let q of questions">{{questions.indexOf(q) + 1 | pluralisePipe}} - {{q}}</div>
     </div>
 
 

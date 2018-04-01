@@ -5,12 +5,14 @@ import { DragulaModule } from 'ng2-dragula';
 
 import { AppComponent } from './app.component';
 import { DragulaSampleComponent } from './dragula-sample/dragula-sample.component';
+import { PluralisePipePipe } from './pluralise-pipe.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DragulaSampleComponent
+    DragulaSampleComponent,
+    PluralisePipePipe
   ],
   imports: [
     BrowserModule,
